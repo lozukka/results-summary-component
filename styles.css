@@ -49,12 +49,12 @@
   --Green-teal: hsl(166, 100%, 37%);
   --Cobalt-blue: hsl(234, 85%, 45%);
   --Backgroud-gradient: linear-gradient(
-    190deg,
+    180deg,
     hsl(252, 100%, 67%),
     hsl(241, 81%, 54%)
   );
   --Circle-gradient: linear-gradient(
-    0deg,
+    180deg,
     hsla(256, 72%, 46%, 1),
     hsla(241, 72%, 46%, 0)
   );
@@ -68,11 +68,62 @@ main {
   justify-content: center;
   align-items: center;
 }
+/*--Upper part--*/
 #upper-part {
   width: 375px;
-  height: 40%;
+  background: var(--Backgroud-gradient);
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  padding: 10px 50px;
 }
+h1 {
+  margin-block: 0.25rem;
+  font-size: 1rem;
+  color: var(--Light-lavender);
+  font-weight: 500;
+}
+/*--Score circle--*/
+#score-circle {
+  background: var(--Circle-gradient);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+#score-circle p {
+  color: hsla(241, 100%, 89%, 0.5);
+  font-size: 1rem;
+  font-weight: 500;
+}
+#score-circle #score {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--White);
+}
+#upper-part h2 {
+  margin-block: 0.1rem;
+  font-size: 1.5rem;
+  color: var(--White);
+  font-weight: 700;
+}
+#upper-part p {
+  width: 300px;
+  text-align: center;
+  color: hsla(241, 100%, 89%, 0.75);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+/*--Lower part--*/
 #lower-part {
   width: 375px;
-  height: 60%;
+  height: 60vh;
 }
