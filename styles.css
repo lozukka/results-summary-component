@@ -59,3 +59,20 @@
     hsla(241, 72%, 46%, 0)
   );
 }
+main {
+  background: var(--Green-teal);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#upper-part {
+  width: 375px;
+  height: 40%;
+}
+#lower-part {
+  width: 375px;
+  height: 60%;
+}
