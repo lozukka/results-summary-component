@@ -60,7 +60,6 @@
   );
 }
 main {
-  background: var(--Green-teal);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -126,4 +125,73 @@ h1 {
 #lower-part {
   width: 375px;
   height: 60vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+#lower-part h2 {
+  font-size: 1rem;
+  margin-block: 0.25rem;
+  color: var(--Light-gray-blue);
+}
+#lower-part div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  height: 55px;
+  border-radius: 10px;
+}
+#lower-part h3 {
+  margin-block: 1rem;
+  font-size: 1rem;
+  margin-left: 10px;
+  font-weight: 500;
+}
+#lower-part div p {
+  margin-left: auto;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+#lower-part div p span {
+  font-weight: 700;
+  color: var(--Light-gray-blue);
+}
+#reaction-row {
+  background: hsla(0, 100%, 67%, 0.075);
+}
+#reaction-row h3 {
+  color: var(--Light-red);
+}
+#memory-row {
+  background: hsla(39, 100%, 56%, 0.075);
+}
+#memory-row h3 {
+  color: var(--Orange-yellow);
+}
+#verbal-row {
+  background: hsla(166, 100%, 37%, 0.075);
+}
+#verbal-row h3 {
+  color: var(--Green-teal);
+}
+#visual-row {
+  background: hsla(234, 85%, 45%, 0.075);
+}
+#visual-row h3 {
+  color: var(--Cobalt-blue);
+}
+#lower-part a {
+  text-decoration: none;
+  background: var(--Light-gray-blue);
+  color: var(--White);
+  text-align: center;
+  padding: 15px;
+  border-radius: 25px;
+  font-weight: 700;
+  margin-top: auto;
+}
+#lower-part a:hover {
+  background: var(--Backgroud-gradient);
+  color: var(--White);
 }
